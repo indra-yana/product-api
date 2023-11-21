@@ -7,7 +7,7 @@ Starter kit laravel
 -   Web server XAMPP or Laragon
 
 ## How to install
--   Clone project.
+-   Clone project `https://github.com/indra-yana/product-api.git`.
 -   Open terminal (Git Bash or CMD) and go to the project root directory
 -   Run `composer install`
 -   Start web server if user XAMPP, Laragon, PHP Artisan Serve, etc
