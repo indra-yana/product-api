@@ -10,7 +10,7 @@ Starter kit laravel
 -   Clone project `https://github.com/indra-yana/product-api.git`.
 -   Open terminal (Git Bash or CMD) and go to the project root directory
 -   Run `composer install`
--   Start web server if user XAMPP, Laragon, PHP Artisan Serve, etc
+-   Start web server XAMPP, Laragon, PHP Artisan Serve, etc
 -   Create database on PHPMyAdmin with name `product_db`
 -   Copy .env.example with command `cp .env.example .env` using git bash command
 -   Setup database on .env file
