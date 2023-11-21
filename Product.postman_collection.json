@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "27404a34-6a04-49e4-86c2-b9545dade235",
+		"name": "Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7170286",
+		"_collection_link": "https://incode-space.postman.co/workspace/QDev~ff693e1d-fb1d-4ee9-b673-a915cba1cc00/collection/7170286-27404a34-6a04-49e4-86c2-b9545dade235?action=share&source=collection_link&creator=7170286"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "admin@laravel.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://product.test/api/login",
+					"protocol": "http",
+					"host": [
+						"product",
+						"test"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://product.test/api/product/1",
+					"protocol": "http",
+					"host": [
+						"product",
+						"test"
+					],
+					"path": [
+						"api",
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "KOA S",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "200000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://product.test/api/product",
+					"protocol": "http",
+					"host": [
+						"product",
+						"test"
+					],
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "T Shirt XXX",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "300000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://product.test/api/product/5",
+					"protocol": "http",
+					"host": [
+						"product",
+						"test"
+					],
+					"path": [
+						"api",
+						"product",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://product.test/api/product/1",
+					"protocol": "http",
+					"host": [
+						"product",
+						"test"
+					],
+					"path": [
+						"api",
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "1|IjjxEpwWVqqEODsnXhvJDboJp6XGly6YxzcM2xLJ",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
