@@ -40,7 +40,7 @@ class ProductController extends Controller
 
     function update(Request $request)
     {
-        $validator = Validator::make($request->all(), [
+        $validator = Validator::make(array_merge($request->all(), ['id' => $request->id]), [
             'id' => 'numeric|required|exists:products,id',
             'name' => 'string|required',
             'price' => 'numeric|required',
